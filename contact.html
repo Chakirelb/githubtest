@@ -4,8 +4,17 @@
     <meta charset="UTF-8">
     <title>Contact</title>
     <style>
+* {
+    box-sizing:border-box;
+}
         body {
             font-family: "Arial","sans-serif";
+            line-height: 20px;
+            width:1020px;
+            margin:auto;
+            padding:20px;
+            background-color:seagreen;
+
         }
         nav a {
             padding: 30px;
@@ -15,57 +24,44 @@
         div#navigatie {
         padding: 20px;
         margin:auto;
-        background-color: cornflowerblue;
+        background-color: mediumseagreen;
         }
-       article {
-           color: gray;
-           display: inline-block;
-        vertical-align: top;
-          margin-left: 20px;
-           width: 50%;
-       }
-       div#form {
-           padding: 20px;
-           width: 300px;
-           color: gray;
-       }
-       div#google{
-           padding: 20px;
+        iframe {
+            float: left;
+            margin-right: 30px;
 
-       }
-        input {
-    float: right;
         }
-        textarea {
-    float: right;
-        }
-        button {
-            float: right;
-        }
+
         div#voeter{
             background-color: gray;
             padding: 20px;
             margin: auto;
-        }
 
+        }
         footer, footer a{
             color: white;
             text-decoration: none;
             line-height: 24px;
         }
-        iframe {
-            width: 48%;
+        .wrapper {
+        padding:20px;
+
+        }
+        #body {
+            background-color:mediumseagreen;
+        }
+      #form {
+          padding: 20px;
+      }
+        input, textarea {
+            vertical-align:top;
         }
 
-        article#adres {
-            float: right;
-            vertical-align: top;
-        }
+
 
 
     </style>
 </head>
-<body>
 <header>
 <div id="navigatie">
 <nav>
@@ -74,41 +70,44 @@
     <a href=""> Sport </a>
     <a href=""> Recepten </a>
     <a href=""> Contact</a>
+    <a href="overons.html"> Over ons </a>
 </nav>
 </div>
 </header>
-<div id="google">
-    <h3> Contact</h3>
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2434.767314107787!2d5.275032151085281!3d52.392768353304184!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c617c1dcedf6af%3A0xb7e60f149191e0f!2sMBO%20College%20Almere%20-%20ROC%20van%20Flevoland!5e0!3m2!1snl!2snl!4v1575972041849!5m2!1snl!2snl" width="400" height="300" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
-    <article id="adres">
-        <b> Adres gegevens:</b>
-        <p> Voorzitter <br>
-             Straat van Florida 1 <br>
-             1334 PA Almere Buiten<br>
-            Telefoon: 036 549 5900 <br> </p>
+<div id="body">
+<div class="wrapper">
+<h3> Contact</h3>
 
-        <p> Penning meester: <br>
-            Winterspelenplein 25 <br>
-            1262 LE Almere Poort <br>
-            Telefoon: 036 549 5900 <br>
-        </p>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2434.767314107787!2d5.275032151085281!
+3d52.392768353304184!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c617c1dcedf6af%3A0xb7e60f149191e0f!2sMBO%20
+College%20Almere%20-%20ROC%20van%20Flevoland!5e0!3m2!1snl!2snl!4v1575972041849!5m2!1snl!2snl" width="400" height="300" framebord
+            er="0" style="border:0;" allowfullscreen=""></iframe>
 
-        <p> Medewerkers <br>
-            Agorawagenplein 1 <br>
-            8224 KP Lelystad <br>
-            Telefoon: 0320 237 500
-        </p>
+    <article> <b>Adres gegevens: </b> <br> <br>
+    Voorzitter <br>
+    Straat van Florida 1 <br>
+    Telefoon: 036 549 5900 <br> <br>
+
+    Penning meester <br>
+    Winterspelenplein 25 <br>
+    1262 LE Almere Poort <br>
+    Telefoon: 036 549 5900 <br> <br>
+
+    Medewerkers <br>
+    Agorawagenplein 1 <br>
+    8224 KP Lelystad <br>
+    Telefoon: 0320 237 500 <br>
     </article>
 </div>
-<div id="form">
-<form action="" method="get" id="nameform">
-    Naam:           <input type="text" name="naam" value=""> <br> <br>
-    E-mailadres:    <input type="text" name="email" value=""> <br> <br>
-    Telefoon:       <input type="text" name="telefoon" value=""> <br> <br>
-    Bericht:        <textarea rows="5" cols="22"> </textarea> <br> <br>
-</form>
-    <br> <br> <br>
-    <button type="submit" form="nameform" value="Submit">Verzenden</button> <br> <br>
+
+    <div id="form">
+        <form action="">
+             Naam:         <input class="gek" type="text" name="firstname" value=""> <br>
+            E-mailadres:  <input class="gek" type="text" name="email" value=""> <br>
+            Telefoon:       <input class="gek" type="text" name="phone" value=""> <br>
+            Bericht: <textarea class="gek" rows="5" cols="22"> </textarea> <br>
+        </form>
+</div>
 </div>
 
 <div id="voeter">
