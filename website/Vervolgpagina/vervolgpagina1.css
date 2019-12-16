@@ -1,0 +1,42 @@
+
+nav{
+    background-color: lightgreen;
+    padding: 20px;
+
+}
+nav a{
+    color: white;
+    padding-right: 5px;
+    text-decoration: none;
+}
+
+div#tiramisu{
+    padding: 50px;
+    float:right;
+}
+
+article{
+    display: inline-block;
+    width: 50%;
+    color: black;
+    margin: 50px;
+
+}
+
+div#afbeeldingen{
+
+    margin: 50px;
+    margin-left: 50px;
+
+}
+
+footer{
+    clear: both;
+    color: white;
+    background-color:lightgreen;
+    padding: 30px;
+}
+
+footer a{
+    color: white;
+}
